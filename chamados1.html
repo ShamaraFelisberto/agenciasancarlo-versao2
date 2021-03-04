@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <title> Chamados </title>
+    <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″>
+    <style>
+      body {
+        margin: 0;
+        background-color: #ffffff;
+      }
+
+      #menu ul{
+        background-color: #005eff;
+        list-style: none;
+        height: 75px;
+      }
+
+      #menu ul li{
+        display: inline;
+      }
+
+      #menu ul li a{
+        padding: 5px 83px;
+        display: inline-block;
+        font: 22px Helvetica;
+        color: white;
+        text-decoration: none;
+        line-height: 68px;
+      }
+
+      #menu ul li a:hover{
+        color: grey;
+      }
+
+      #link {
+        text-decoration: none;
+        color: black;
+      }
+
+      #d3 {
+        width: 250px;
+        height: 100px;
+        border-style: solid;
+        border: 0px;
+        font: 20px Geneva;
+        margin-left: 900px;
+        margin-top: 100px;
+        margin-right: none;
+        position: fixed;
+        background-color: #FBC02D;
+      }
+
+      form{
+        border: 0px solid #000000;
+        float: left;
+        padding: 12px;
+        background-color: LightSkyBlue;
+        margin-left: 200px;
+        margin-top: 50px;
+		    font:20px Helvetica, sans-serif;
+        color: black;
+        width: 1000px;
+      }
+      form input{
+        padding:4px;
+        width: 900px;
+        height: 40px;
+        display: block;
+        font: 20px Helvetica, sans-serif;
+      }
+      form textarea {
+        width: 900px;
+        height: 350px;
+        display: block;
+        font: 20px Helvetica, sans-serif;
+      }
+      form button{
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+        background-color: #FBC02D;
+        color: Black;
+        font: 20px Helvetica;
+      }
+      form select {
+        width: 400px;
+        height: 50px;
+        font: 20px Helvetica, sans-serif;
+      }
+      #d2{
+        font: 45px Fantasy ;
+        margin-left: 507px;
+
+        margin-top: 30px;
+      }
+      #title{
+        font: 20px Helvetica, sans-serif;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id='d2'>
+      <font color='DarkBlue'>  San Carlo </font>
+      <font color='black'> Agência </font>
+    </div>
+    <div id= 'menu'>
+      <ul>
+        <li> <a href = 'inicio.html'>  HOME  </a href></li>
+        <li> <a href = 'capitais.html'> HORÁRIOS  </a href> </li>
+        <li><a href = 'contratos1.html'> CONTRATOS </a href></li>
+        <li><a href = 'chamados1.html'> ABERTURA DE CHAMADOS </a href></li>
+        </ul>
+      </div>
+      <form action='https://formspree.io/f/xdoplddp' id='form2' method="POST">
+        <div id='title'>
+          <h1 align='center'><i> Chamados - Formulário </i></h1>
+        </div>
+        <label>
+          Nome: <input type='text' id='name' name='username'/> <br><br>
+          Assunto: <input type='text' id='assunto' name='assunto'/> <br><br>
+          Categoria: <select id='cat' name='categoria'> <br><br>
+            <option value='cate' selected> Categoria </option>
+            <option value='adm' select> Administrativa </option>
+            <option value='ger'> Gerencial </option>
+            <option value='opr'> Operacional </option>
+          </select> <br><br>
+          Detalhamento:<textarea name="detalhamento" rows="10" cols="30" id='det'> </textarea><br><br>
+          <table>
+            <tr>
+              <td> <button type='submit' onclick="alert('As respostas foram enviadas!')"> Enviar </button> </td>
+              <td><button type='reset'> Apagar informações </button></td>
+            </tr>
+          </table>
+    </body>
+</html>
